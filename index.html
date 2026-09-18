@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CarbonWise - Carbon Footprint</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+
+    <header>
+        <h1>CarbonWise</h1>
+        <p>Electricity Bill & Carbon Footprint Analyzer</p>
+    </header>
+
+    <main>
+
+        <section class="upload-card">
+
+            <h2>Upload Electricity Bill</h2>
+
+            <p>
+                Upload your electricity bill image or PDF to calculate
+                your electricity consumption and carbon footprint.
+            </p>
+
+            <input
+                type="file"
+                id="fileInput"
+                accept="image/*,.pdf"
+            >
+
+            <button id="uploadBtn" onclick="uploadFile()">
+                Upload Bill
+            </button>
+
+            <p id="status"></p>
+
+        </section>
+
+        <section id="result" class="result-card">
+
+            <h2>Carbon Footprint Result</h2>
+
+            <div class="result-item">
+                <span>Units Consumed</span>
+                <strong id="units">--</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Electricity Cost</span>
+                <strong id="cost">--</strong>
+            </div>
+
+            <div class="result-item">
+                <span>CO₂ Emissions</span>
+                <strong id="emission">--</strong>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 CarbonWise</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

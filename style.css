@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #1f6f43;
+    color: white;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.upload-card,
+.result-card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.upload-card h2,
+.result-card h2 {
+    margin-bottom: 15px;
+}
+
+.upload-card p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #1f6f43;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #155331;
+}
+
+button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+#status {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    background: #222;
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .upload-card,
+    .result-card {
+        padding: 20px;
+    }
+}
