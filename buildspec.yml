@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing dependencies..."
+
+  build:
+    commands:
+      - echo "Building CarbonWise frontend..."
+      - echo "HTML, CSS and JavaScript files are ready for deployment."
+
+  post_build:
+    commands:
+      - echo "Build completed successfully."
+
+artifacts:
+  files:
+    - '**/*'
